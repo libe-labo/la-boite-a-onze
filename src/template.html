@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.7.0/lodash.min.js"></script>
+
+        <style type="text/css">
+            {{style}}
+        </style>
+    </head>
+    <body>
+        <div class="main {{formation}}">
+            {{#joueurs}}
+                <div class="player">
+                    <img src="{{picture}}" class="player-{{id}}">
+                    <div class="overlay overlay--hidden"></div>
+                    <div class="player__popup player__popup--hidden">
+                        <p class="bold">
+                            {{firstname}} {{lastname}}<br>
+                            {{place}}<br>
+                            {{team}}<br>
+                        </p>
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            {{/joueurs}}
+        </div>
+
+        <script type="text/javascript">
+            {{script}}
+        </script>
+    </body>
+</html>

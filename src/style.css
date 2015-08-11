@@ -1,0 +1,125 @@
+html, body, .main {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Georgia, serif;
+}
+
+.main {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    background-image: url(terrain.png);
+    background-size: 100% 100%;
+}
+
+.player img {
+    position: absolute;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+.player__popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    width: 85%;
+    padding: 1em;
+
+    background-color: #eee;
+    border: 3px solid #c42121;
+}
+
+.player__popup--hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.overlay--hidden {
+    left: 100%;
+}
+
+.player-1  { top: 15%; left: 50%; }
+
+.f442 .player-2  { top: 37%; left: 85%; }
+.f442 .player-3  { top: 37%; left: 15%; }
+.f442 .player-4  { top: 32%; left: 62%; }
+.f442 .player-5  { top: 32%; left: 38%; }
+.f442 .player-6  { top: 60%; left: 38%; }
+.f442 .player-7  { top: 60%; left: 62%; }
+.f442 .player-8  { top: 68%; left: 85%; }
+.f442 .player-9  { top: 68%; left: 15%; }
+.f442 .player-10 { top: 85%; left: 38%; }
+.f442 .player-11 { top: 85%; left: 62%; }
+
+.f433 .player-2  { top: 37%; left: 85%; }
+.f433 .player-3  { top: 37%; left: 15%; }
+.f433 .player-4  { top: 32%; left: 38%; }
+.f433 .player-5  { top: 32%; left: 62%; }
+.f433 .player-6  { top: 59%; left: 25%; }
+.f433 .player-7  { top: 54%; left: 50%; }
+.f433 .player-8  { top: 59%; left: 75%; }
+.f433 .player-9  { top: 80%; left: 25%; }
+.f433 .player-10 { top: 76%; left: 50%; }
+.f433 .player-11 { top: 80%; left: 75%; }
+
+.f451 .player-2  { top: 37%; left: 85%; }
+.f451 .player-3  { top: 37%; left: 15%; }
+.f451 .player-4  { top: 32%; left: 38%; }
+.f451 .player-5  { top: 32%; left: 62%; }
+.f451 .player-6  { top: 59%; left: 30%; }
+.f451 .player-7  { top: 59%; left: 70%; }
+.f451 .player-8  { top: 57%; left: 50%; }
+.f451 .player-9  { top: 63%; left: 88%; }
+.f451 .player-10 { top: 63%; left: 12%; }
+.f451 .player-11 { top: 85%; left: 50%; }
+
+.f541 .player-2  { top: 37%; left: 88%; }
+.f541 .player-3  { top: 37%; left: 12%; }
+.f541 .player-4  { top: 32%; left: 30%; }
+.f541 .player-5  { top: 30%; left: 50%; }
+.f541 .player-6  { top: 32%; left: 70%; }
+.f541 .player-7  { top: 60%; left: 38%; }
+.f541 .player-8  { top: 60%; left: 62%; }
+.f541 .player-9  { top: 68%; left: 85%; }
+.f541 .player-10 { top: 68%; left: 15%; }
+.f541 .player-11 { top: 85%; left: 50%; }
+
+
+.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .player img {
+        width: 60px;
+    }
+}
